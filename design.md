@@ -1,5 +1,20 @@
 Drum Journal
 
+# Victor Wooten's aspects of Music
+"Teachers have nothing to teach you. You gotta learn yourself."
+"No practice; just play"
+Groove
+Notes
+Articulation/Duration
+Technique
+Emotion/Feel
+Dynamics
+Rhythm/Tempo
+Tone
+Phrasing
+Space/Rest
+Listening
+
 # Features
 
 * All information available in ASCII for manual editing and writing
