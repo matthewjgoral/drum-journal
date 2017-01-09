@@ -1,5 +1,5 @@
-NOTE: map
-{:name "Name"
+NOTE
+{:name "Name" => String?
  :note note/rest
  :dynamics p/mp/mf/f
  :articulartion drum/rim
@@ -7,7 +7,7 @@ NOTE: map
  :limb R/L/K/H
  :grace-note flam/drag
  :representation O
- :note "some text"}
+ :remarks "some text"}
 
 PHRASE
 {:name "Cold sweat groove question"
@@ -19,12 +19,8 @@ PHRASE
          (HH-note-open)
          ()
          (HH-note-closed SD-note HF-note)
-         ()...]}
-
-VARIATION
-{:name
- :phrase {phrase}
- :
+         ()...]
+ :remarks "some text"}
 
 PIECE
 {:name  "Cold sweat groove"
@@ -35,18 +31,21 @@ PIECE
  :drummer "Clyde Stubblefield"
  :album "Some album"
  :year "1972"
- :note "some note"
- :content [vector of phrases]}
+ :remarks "some text"
+ :phrases [vector of phrases]}
 
 PLAY
-{:date
+{:start-time
+ :end-time
+ :phrase phrase
  :tempo
- :feeling
- :rating
- :content phrase/variation}
+ :rating G/A/B
+ :remarks}
 
 SESSION
-[vector of plays]
+{:date
+ :plays [vector of plays]
+ :remarks}
 
 GIG
 {:date

@@ -23,6 +23,9 @@ Listening
 * Attach optional metadata to notes
     * display metadata optionally and succinctly
 * Plan and document practice sessions
+    * Plan a session by putting patterns together
+    * Predefine time but allow to stop earlier or later
+    * Allow documenting impromptu ideas and patterns
 * Database to store songs and patterns
     * Save songs and patterns
     * Search by title, artist, metadata and specific notes (e.g. all songs that have a snare on the & of 3)
@@ -32,18 +35,5 @@ Listening
     * You haven't practiced ratamacues this month
     * You haven't practiced bass drum patterns
 
-
-# Data structures
-
-* Note
-* Pattern [?]
-* Section
-* Song
-
-* Collection of predefined:
-    * notes
-    * patterns: 
-    * sections
-    * song
-
-* Practice session
+# Variations
+A Variations will be a function that generates new phrases given a phrase.
