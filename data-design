@@ -1,0 +1,55 @@
+NOTE: map
+{:name "Name"
+ :note note/rest
+ :dynamics p/mp/mf/f
+ :articulartion drum/rim
+ :instrument sd/ht/lt
+ :limb R/L/K/H
+ :grace-note flam/drag
+ :representation O
+ :note "some text"}
+
+PHRASE
+{:name "Cold sweat groove question"
+ :display-name "GROOVE QUESTION"
+ :count 4
+ :subdivision 4
+ :notes [(HH-note-closed BD-note)
+         ()
+         (HH-note-open)
+         ()
+         (HH-note-closed SD-note HF-note)
+         ()...]}
+
+VARIATION
+{:name
+ :phrase {phrase}
+ :
+
+PIECE
+{:name  "Cold sweat groove"
+ :tempo 120
+ :feel  "Quick"
+ :song  "Cold sweat"
+ :artist "James Brown"
+ :drummer "Clyde Stubblefield"
+ :album "Some album"
+ :year "1972"
+ :note "some note"
+ :content [vector of phrases]}
+
+PLAY
+{:date
+ :tempo
+ :feeling
+ :rating
+ :content phrase/variation}
+
+SESSION
+[vector of plays]
+
+GIG
+{:date
+ :venue
+ :band
+ :notes}
