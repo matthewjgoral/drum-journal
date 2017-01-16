@@ -1,0 +1,48 @@
+Flow
+
+# Menu options
+
+## Search
+Search  -notes 
+        -phrases
+        -pieces
+        -sessions
+        -plays
+        -gigs
+
+## Create
+Design  -note
+        -phrase
+        -piece
+        -session
+        -variation
+Play a session
+Reflect on a gig
+
+## Generate
+Generate a session
+
+
+# Design interface
+## Note
+
+Upon filling an option, if it conflicts show the conflict next to the options. If articulation is rim, but chosen HH for example.
+Upon save check whether a duplicate exists and ask to change name/representation
+Duplicate is same dynamics/articulation/instrument/limb/grace-note
+Clash name? Ask to change this one or the other one.
+
+----- Design a note -----
+
+Name:           _____ [free text. string]
+Dynamics:       _  [p/f/_]
+Articulation:   _____ [one of options. prefilled based on instrument/limb]
+Instrument:     __ [one of options. prefilled based on articulation/limb]
+Limb:           _ [R/L/K/H. prefilled based on instrument]
+Grace note:     ____ [flam/drag/_]
+Representation: _ [single character]
+Remarks:        _____ [free text. string]
+
+SAVE/CANCEL
+
+-----<------------->-----
+

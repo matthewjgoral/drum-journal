@@ -1,13 +1,12 @@
 NOTE
 {:name "Name" => String?
- :note note/rest
- :dynamics p/mp/mf/f
- :articulartion drum/rim
- :instrument sd/ht/lt
+ :dynamics p/f [no dynamics means neutral]
+ :articulartion drum/rimshot/rim/cross-stick/edge/bow/bell/choked
+ :instrument SD/HH/BD/CR/RD/HT/LT/CB/HF
  :limb R/L/K/H
- :grace-note flam/drag
- :representation O
- :remarks "some text"}
+ :grace-note flam/drag [or nothing]
+ :representation O [single character]
+ :remarks "some text" [string]}
 
 PHRASE
 {:name "Cold sweat groove question"
@@ -51,4 +50,4 @@ GIG
 {:date
  :venue
  :band
- :notes}
+ :reflection}
