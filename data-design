@@ -21,6 +21,13 @@ PHRASE
          ()...]
  :remarks "some text"}
 
+SECTION
+{:name "Verse"
+ :shortname "V1"
+ :bars 8
+ :phrases [groove1 groove1 groove1 fill]
+ :remarks "some text"}
+
 PIECE
 {:name  "Cold sweat groove"
  :tempo 120
@@ -31,18 +38,20 @@ PIECE
  :album "Some album"
  :year "1972"
  :remarks "some text"
- :phrases [vector of phrases]}
+ :sections [vector of sections]}
 
 PLAY
 {:start-time
  :end-time
+ :date
  :phrase phrase
  :tempo
  :rating G/A/B
  :remarks}
 
 SESSION
-{:date
+{:number [autoincrements]
+ :date
  :plays [vector of plays]
  :remarks}
 
@@ -50,4 +59,6 @@ GIG
 {:date
  :venue
  :band
+ :setlist
+ :time
  :reflection}

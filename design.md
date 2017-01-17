@@ -34,6 +34,7 @@ Listening
 * Suggestions for practice based on self-selected priorities and what you haven't practiced
     * You haven't practiced ratamacues this month
     * You haven't practiced bass drum patterns
+* Konnakol counting system
 
 # Variations
 A Variations will be a function that generates new phrases given a phrase.
