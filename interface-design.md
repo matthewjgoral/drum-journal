@@ -32,8 +32,11 @@ Instrument
 Limb
 Grace Note
 
-## Default note per instrument as above
-SD
+## Available options per instrument as above including default, can also add an option on the fly and it will be added to the 
+SD Dynamics -all -_
+   Articulation #{drum, rimshot, cross-stick} -drum
+   Limb #{R, L} -R
+   Grace
 HH
 ...
 
@@ -167,6 +170,15 @@ ________________
 ## Session
 Be able to use a previous session as base
 Dont have to give a date
+Number automatic
+Plays are chosen from a list of phrases, and wrapped in a play
+
 
 ----- Design a Session -----
+Number:  _____
+Date:    __/__/__
+Remarks: _____
 
+1. Warm-up 1
+2. Doubles
+3. ______
