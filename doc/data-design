@@ -6,15 +6,19 @@ NOTE
  :limb R/L/K/H
  :grace-note flam/drag [or nothing]
  :representation O [single character]}
+ 
+CHORD
+{:name ???
+ :notes [note1 note2]}
 
 PHRASE
 {:name "Cold sweat groove question"
  :display-name "GROOVE QUESTION"
  :count 4
  :subdivision 4
- :notes [[note11 note1e note1& note1a]
-         [note22 note2e note2& note2a]
-         ...]
+ :contents [[chord11 note1e note1&  note1a]
+            [chord22 note2e chord2& note2a]
+            [...]]
  :remarks "some text"}
 
 SECTION
