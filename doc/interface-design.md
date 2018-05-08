@@ -1,228 +1,147 @@
-Flow
+% Interface
 
-# Menu options
+# Front page
 
-## Search
-Search
-- phrases
-- pieces
-- sessions
-- performance
-- gigs
+- New practice session
+- Previous practice sessions
 
-## Create
-Design
-- phrase
-- piece
-- session
-- variation
-Play a session
-Reflect on a gig
+- New exercise
+- Existing exercises
+
+- Stats
+
+- Save / Export
+- Load / Import
 
 
-## Generate
-Generate a session
+# New practice session
 
-## Config
-Configure
+- Warmup
+- (Pick an exercise area) -> (Pick an exercise)
+- (Pick an exercise area) -> (Pick an exercise)
+- Plenary
 
-# Configuration options
-## Note option lists. Those appear as choices when designing notes.
-Dynamics
-Articulation
-Instrument
-Limb
-Grace Note
+- START
+- SAVE FOR LATER
 
-## Available options per instrument as above including default
-can also add an option on the fly and it will be added to the list above
+## Pick an exercise area
 
-SD Dynamics -all -_
-   Articulation #{drum, rimshot, cross-stick} -drum
-   Limb #{R, L} -R
-   Grace
-HH
-...
-
-## Sudivision options
-Counting 1
-         2 &
-         3 t l
-         4 e & a
-         5  
-         6 t l & t l
-
-# Design interface
-
-## Phrase
-
-Count and Subdivision both prefilled to 4
-Changing Count adds/removes counts [warning about deleting notes]
-Changing Sudivision add/removes columns and changes counting [warning about deleting notes]
-When moving highlight line and column
-Add a way to override representation on demand
-Be able to load a phrase from search as a starting point
-Place previous note shortcut
-Place previous note and open menu shortcut
-Repeat previous beat
-Move selected notes up/down
-Increase/decrease dynamics
-Add flam/drag
-Change articulation - change display
-
-~~~~~
------ Design a phrase -----
-
-Name:         -----
-Display name: -----
-Count:        -
-Subdivision:  -
-CLEAR [when things get messed up]
----------------------------
-
-    1 e & a 2 e & a 3 e & a 4 e & a
-SD  O   o   O   o   _ [_ -> R    drum        -> _                  ] Press <CR> at any point to place with defaults
---                    [p    L -> rimshot        flam -> place note ]
-                      [f         cross-stick    drag               ]
-                        
-
---------------------------
-Remarks: -----
-~~~~~
+Areas will be shown in order:
+- Essential area if not present
+- Least practiced area (respecting weight)
+- Then next on list in the following order
 
 
-## Piece
-The preview can be toggled off/only for selected section/any selected sections/all
-You can create a new section if you need
-Song, artist, etc. metadata suggestions come up as you're typing, <CR> confirms the autosuggestion, <ESC> cancels autosuggestion until next keypress, 
-You can drop in a section and modify it on the fly and save it with a different name - Default name: Song-section-[give name]-1
+### Technique
+- Line from Rudimental Ritual
+- One of Alphabet exercises
 
-~~~~~
------ Design a piece -----
+### Coordination
+- Ted Reed's Syncopation
+- Gary Chester's System
+- Linear ideas?
 
-Name:  -----   Song:    -----
-Tempo: ---     Artist:  -----
-Feel:  -----   Drummer: -----
-               Album:   -----
-               Year:    ----
+### Endurance
+- One handed rolls
+- Gravity rolls
+- Blast beat
+- Double bass
 
-Remarks:
---------------------------
+### Time studies
+- Ahead/Behind
 
-| INTRO | VERSE1 | CHORUS | ____ |
-|-------|--------|--------|------|
-|   4   |   8    |   8    |      |
-|-------|--------|--------|------|
-| "note"| "bla"  | "bla"  |      |
-|-------|--------|--------|------|
-            |
-            v [Preview opens]
+### Pieces
 
-    1 e & a 2 e & a 3 e & a 4 e & a 1 e & a 2 e & a 3 e & a 4 e & a 
-HH  x   o   x   x   x   o   x   x   x   o   x   x   x   o   x   x   |
-HT  |       :       :       :       |       :       :       :       |
-SD  |       O     o :       :   O   | o     O       :       O       |
-LT  |       :       :       :       |       :       :       :       |
-BD  O       :       O   O   :       |   O   :       O   O   :       |
-HF  |       x       :       x       |       x       :       x       |
-~~~~~
+### Solo
 
-## Session
-Be able to use a previous session as base
-Dont have to give a date, but can if you want to plan ahead. Will be changed to whenever you actually performed it.
-Number automatic (yearmmddhhmm of start of performance)
-Plays are chosen from a list of phrases, and wrapped in a play
+### Playalong
 
-~~~~~
------ Design a Session -----
-Number:  _____
-Date:    __/__/__
-Remarks: _____
+## START
 
-1. Warm-up 1
-2. Doubles
-3. ______
-~~~~~
+Date and time stamp
+Show clock / Set time to practice
+Show metronome
+Show exercise content
+Show last BPM
+Click to show card details
 
-# Perform interface
+- Start / Pause
+- Stop (jump to Plenary)
+- Next / Previous
+- Repeat exercise
+- Add new exercise
+- Show existing plan
+- Add note
 
-## Start a session
-Resume session (if on a different day ask if append or save as a new session, if on same day just append)
-Start a new session
-    Choose a saved session
-    Create a new session based on previous
-    Create a new session from scratch
+# Previous practice sessions
 
-## Run a session
-Date autofilled
-Choose each section
-Shortcuts for open next session
-Put in a new performance (choose phrase, section, piece and make new/existing/modify existing)
-Alter time
+List of previous sessions in chronological order. Show date, number of exercises, length, comments.
 
-~~~~~
-Date:     __/__/__
+Filters (combinable):
+- Between this and this date
+- Last x days
+- Last x sessions
+- Between this and this length
+- Contains these areas/exercises (in this BPM range) (practiced this long)
+- Contains this in the note
+Clear filter/All sessions
 
-[05:12] Warm-up 1 
-[--:--] Doubles
-[--:--] Bass drum skank practice
-...
+For selected criteria show:
+Total number of sessions/exercises
+Total time practiced
+Average session time
 
-PAUSE
-END
-~~~~~
+# New area
 
-## Play something
+Name
+Description
+Essential?
+Choose exercises
 
-Be able to edit the pattern on the fly and save it as a different one
-Start and stop the timer with a button. Restart possible until save.
-Ask for date when beginning session and fill it in for all plays
-Start/pause clock [CR?]
-Pop up to selection list and pause/pop back and manually resume
-Stop and record
+# New exercise
 
-~~~~~
------ Play -----
-Duration: __:__ (in seconds)
+Name
+Description
+Essential?
+Target BPM
+Content
+    Text
+    Musical notation/Visual representation
+    Photo/MP3/MP4
+    Embedded link
 
-Tempo:  ___
+# Existing areas/exercises
 
-    1 e & a 2 e & a 3 e & a 4 e & a 1 e & a 2 e & a 3 e & a 4 e & a 
-HH  x   o   x   x   x   o   x   x   x   o   x   x   x   o   x   x   |
-HT  |       :       :       :       |       :       :       :       |
-SD  |       O     o :       :   O   | o     O       :       O       |
-LT  |       :       :       :       |       :       :       :       |
-BD  O       :       O   O   :       |   O   :       O   O   :       |
-HF  |       x       :       x       |       x       :       x       |
+Set weights of areas/exercises
+Set some areas/exercises as essential
+Order areas/exercises in importance
 
-________________
-16/01/16 -- 100 -- G -- 10:12
-[other dates and details of practice]
-~~~~~
+Edit area/exercise
+
+# Statistics
+
+Choose area
+Choose exercise
 
 
-# Search interface
+# Metronome
 
-## Search phrases
+Choose BPM
+Choose X/Y
+Volume for each 16th note
+Miss out n bars for every m bars
+Move between one or more [1/e/&/a] every x bars
 
-~~~~~
------ Search phrases -----
-CLEAR
+# Card Interface
 
-Name:         -----
-Display name: -----
-Count:        -
-Subdivision:  -
-Remarks:      ____
----------------------------
-
-    1 e & a 2 e & a 3 e & a 4 e & a 1 e & a 2 e & a 3 e & a 4 e & a 
-HH  |                               |                               |
-SD  |       O     o :       :   O   | o     O       :       O       |
-BD  O       :       O   O   :       |   O   :       O   O   :       |
-HF  |       x       :       x       |       x       :       x       |
-
-
-~~~~~
-
+On each card display
+- Number of times this area/exercise has been practiced
+- Total length this area/exercise has been practiced
+- Number of days since this area/exercises has been practiced
+- Click for details
+    - Calendar view 
+    - Bar graph of length of practice
+    - Average length of practice
+    - Line graph of BPM history 
+    - History of notes
 

@@ -1,6 +1,29 @@
-Drum Journal
+% Drum Journal
 
-# Victor Wooten's aspects of Music
+# Features
+
+* List of exercises grouped by type (warmup, coordination, etc.)
+* Metronome
+    * tempo variation
+    * missing beats
+    * moving click
+* All information available in plain text for manual editing and writing
+    * display tabs
+    * edit tabs with shortcuts: tab between sections, press key to add note and info
+* Plan and document practice sessions
+    * Plan a session by putting exercises together
+    * Include timer and prompts
+* Embedd Youtube, play mp3s
+* Represent exercises and play them back using samples
+* Suggestions for practice (based on what???)
+
+
+# INSPIRATION
+
+## Card based interface
+Trello
+
+## Victor Wooten's aspects of Music
 "Teachers have nothing to teach you. You gotta learn yourself."
 "No practice; just play"
 Groove
@@ -15,26 +38,10 @@ Phrasing
 Space/Rest
 Listening
 
-# Features
+## Konakol counting system
 
-* All information available in ASCII for manual editing and writing
-    * display tabs
-    * edit tabs with shortcuts: tab between sections, press key to add note and info
-* Attach optional metadata to notes
-    * display metadata optionally and succinctly
-* Plan and document practice sessions
-    * Plan a session by putting patterns together
-    * Predefine time but allow to stop earlier or later
-    * Allow documenting impromptu ideas and patterns
-* Database to store songs and patterns
-    * Save songs and patterns
-    * Search by title, artist, metadata and specific notes (e.g. all songs that have a snare on the & of 3)
-* Auto generation of patterns based on criteria
-    * e.g. paradiddle across instruments, rolls starting at 1, 2, 3, & of 3, etc.
-* Suggestions for practice based on self-selected priorities and what you haven't practiced
-    * You haven't practiced ratamacues this month
-    * You haven't practiced bass drum patterns
-* Konnakol counting system
 
-# Variations
-A Variations will be a function that generates new phrases given a phrase.
+## Visual representations of rhythm
+Circular representations of rhythm from The Geometry of Musical Rhythm by Godfried T. Toussaint
+Drumset Fundamentals graphical representations of rhythm https://www.youtube.com/channel/UCzEkyKD5vboccdMipNQWY4w
+
