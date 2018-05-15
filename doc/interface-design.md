@@ -31,7 +31,6 @@ Areas will be shown in order:
 - Least practiced area (respecting weight)
 - Then next on list in the following order
 
-
 ### Technique
 - Line from Rudimental Ritual
 - One of Alphabet exercises
